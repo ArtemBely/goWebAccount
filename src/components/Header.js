@@ -34,7 +34,7 @@ class Header extends React.Component{
              </form>
            <a href='/postpone' id='postpone'>Отложить</a>
           <a href='/unsubscribe' id='unsubscribe2'>Отписать</a>
-        <a href='/table' id='table'>Экспорт в xsl</a>
+        <a href='/table' id='table'>Экспорт в xslx</a>
 
       </div>
     )
