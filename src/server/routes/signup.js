@@ -5,7 +5,7 @@ import express from 'express';
 import serialize from 'serialize-javascript';
 import { StaticRouter } from 'react-router-dom';
 import { renderToString } from 'react-dom/server';
-import User from '../models/user.js';
+import User from '../models/User.js';
 import Enter from '../../components/Enter';
 import Registration from '../../components/Registration';
 
