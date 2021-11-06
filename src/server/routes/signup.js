@@ -49,9 +49,8 @@ router.get('/', notLoggedIn, (req, res, next) => {
 
 router.post('/', (req, res, done) => {
 
-  var { name, email, password } = req.body;
+  var { email, password } = req.body;
 
-  req.checkBody('name', "Поле 'имя' должно быть заполнено").notEmpty();
   req.checkBody('email', 'Неправильный Email').isEmail();
   req.checkBody('password', 'Минимально число символов - 5').isLength({min: 5});
 
@@ -117,7 +116,6 @@ router.post('/', (req, res, done) => {
   }
 
 var newUser = new User({
-  name: name,
   email: email,
   password: password
 });

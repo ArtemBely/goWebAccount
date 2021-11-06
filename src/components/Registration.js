@@ -46,7 +46,6 @@ class Registration extends React.Component{
         <p className='reg'>
          {this.showSuccess()}
           <form action='/signup' method='POST' className='wrap_signup'>
-             <input type='text' name='name' placeholder='имя' required/>
              <input type='text' name='email' placeholder='mail' required/>
              <input type='text' name='password' placeholder='пароль' required/>
              <button type='submit' className='buttonSignup'>Создать учетную запись</button>
