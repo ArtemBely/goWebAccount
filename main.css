@@ -1,9 +1,4 @@
-.wrap_reg, .wrap_enter {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .reg {
   position: relative;
   width: 1290px;
@@ -20,12 +15,7 @@
   left: 230px;
   top: 200px;
 }
-.wrap_formEnter {
-  display: grid;
-  width: 400px;
-  top: 300px;
-  position: relative;
-}
+
 .wrap_profile {
   position: relative;
   width: 100%;
@@ -277,5 +267,134 @@
 }
 .detectDelete {
   position: relative;
+}
+
+.wrap_enter {
+  max-width: 667px;
+  background-color: #F9F9F9;
+  margin: 75px auto 42px;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap_formEnter {
+  width: 367px;
+  margin: 100px auto;
+  display: grid;
+  position: relative;
+}
+.form__title {
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+  margin: 0;
+  color: #1A202C;
+}
+.form__paragraph {
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 0 0 25px;
+  color: #000;
+}
+
+.form__link {
+  text-decoration: underline;
+  color: #000;
+}
+
+.form__password {
+  text-decoration: underline;
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #808080;
+}
+
+.form__input {
+  width: 100%;
+  border-radius: 7px;
+  padding: 10px 20px 12px;
+  margin-bottom: 15px;
+  border: 2px solid #808080;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #000;
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+.form__input:focus, .form__input:focus-visible  {
+  color: #000;
+  border-color: #000;
+}
+
+.form__input::placeholder {
+  color: #808080;
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+.form__button {
+  border: 2px solid #FFAC22;
+  border-radius: 7px;
+  padding: 10px 30px 12px;
+  color: #000;
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  background-color: transparent;
+  max-width: 170px;
+}
+
+.form__button:disabled {
+  border-color: #808080;
+  color: #808080;
+}
+
+.form__label {
+  margin-bottom: 5px;
+  color: #000;
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.form__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0 20px;
+}
+
+.form__checkbox {
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	line-height: 20px;
+	background-color: #F7FAFC;
+	border: 1px solid #808080;
+  border-radius: 8px;
+	transition: all 0.2s;
+	outline: none;
+	cursor: pointer;
+  margin: 0 11px 0 0;	
+}
+
+.form__checkbox:checked {
+  background-color: #FFAC22;
 }
 

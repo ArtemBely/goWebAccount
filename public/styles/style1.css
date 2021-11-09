@@ -1,9 +1,4 @@
-.wrap_reg, .wrap_enter {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .reg {
   position: relative;
   width: 1290px;
@@ -20,12 +15,7 @@
   left: 230px;
   top: 200px;
 }
-.wrap_formEnter {
-  display: grid;
-  width: 400px;
-  top: 300px;
-  position: relative;
-}
+
 .wrap_profile {
   position: relative;
   width: 100%;

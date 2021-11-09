@@ -45,11 +45,67 @@ class Registration extends React.Component{
       <div className='wrap_reg'>
         <p className='reg'>
          {this.showSuccess()}
-          <form action='/signup' method='POST' className='wrap_signup'>
-             <input type='text' name='email' placeholder='mail' required/>
-             <input type='text' name='password' placeholder='пароль' required/>
-             <button type='submit' className='buttonSignup'>Создать учетную запись</button>
-          </form>
+         <form
+						action="/signup/signin"
+						method="POST"
+						className="wrap_signup"
+					>
+						<h2 className="form__title">
+              Registration
+						</h2>
+						<p className="form__paragraph">
+              Already Registered?
+							<NavLink
+								to="/"
+								className="form__link"
+							>
+								Log in
+							</NavLink>
+						</p>
+						<label for="email" className="form__label">
+							Your email
+						</label>
+						<input
+							type="mail"
+							name="email"
+							id="email"
+							placeholder="email@site.com"
+							className="form__input"
+						/>
+						<label for="password" className="form__label">
+							Password
+						</label>
+						<input
+							type="password"
+							name="password"
+							placeholder="●●●●●●●●●●●●●●"
+							className="form__input"
+							value={this.state.value}
+							onChange={this.onChange}
+						/>
+						<div className="form__container">
+							<div class="input-control-wrapper">
+								<input
+									type="checkbox"
+									name="remember"
+									id="remember"
+									className="form__checkbox"
+								/>
+								<label
+									className="form__label"
+									for="remember"
+								>
+									Remember me
+								</label>
+							</div>
+						</div>
+						<button type="submit" className="form__button"
+              disabled={!this.state.value}
+              onClick={this.add}
+            >
+							Register now
+						</button>
+					</form>
         </p>
       </div>
     )
