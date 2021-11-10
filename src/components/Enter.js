@@ -74,7 +74,7 @@ class Enter extends React.Component {
 								Register
 							</NavLink>
 						</p>
-						<label for="email" className="form__label">
+						<label htmlFor="email" className="form__label">
 							Your email
 						</label>
 						<input
@@ -84,7 +84,7 @@ class Enter extends React.Component {
 							placeholder="email@site.com"
 							className="form__input"
 						/>
-						<label for="password" className="form__label">
+						<label htmlFor="password" className="form__label">
 							Password
 						</label>
 						<input
@@ -96,7 +96,7 @@ class Enter extends React.Component {
 							onChange={this.onChange}
 						/>
 						<div className="form__container">
-							<div class="input-control-wrapper">
+							<div className="input-control-wrapper">
 								<input
 									type="checkbox"
 									name="remember"
@@ -105,7 +105,7 @@ class Enter extends React.Component {
 								/>
 								<label
 									className="form__label"
-									for="remember"
+									htmlFor="remember"
 								>
 									Remember me
 								</label>
@@ -135,7 +135,7 @@ class Enter extends React.Component {
 						<p className="form__paragraph">
               Enter your email, we will send you a link to reset your password
 						</p>
-						<label for="email" className="form__label">
+						<label htmlFor="email" className="form__label">
 							Your email
 						</label>
 						<input
@@ -144,7 +144,7 @@ class Enter extends React.Component {
 							id="email"
 							placeholder="email@site.com"
 							className="form__input"
-						/>						
+						/>
 						<button type="submit" className="form__button"
               disabled={!this.state.value}
               onClick={this.add}

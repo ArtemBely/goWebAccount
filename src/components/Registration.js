@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 class Registration extends React.Component{
 
@@ -62,7 +63,7 @@ class Registration extends React.Component{
 								Log in
 							</NavLink>
 						</p>
-						<label for="email" className="form__label">
+						<label htmlFor="email" className="form__label">
 							Your email
 						</label>
 						<input
@@ -72,7 +73,7 @@ class Registration extends React.Component{
 							placeholder="email@site.com"
 							className="form__input"
 						/>
-						<label for="password" className="form__label">
+						<label htmlFor="password" className="form__label">
 							Password
 						</label>
 						<input
@@ -84,7 +85,7 @@ class Registration extends React.Component{
 							onChange={this.onChange}
 						/>
 						<div className="form__container">
-							<div class="input-control-wrapper">
+							<div className="input-control-wrapper">
 								<input
 									type="checkbox"
 									name="remember"
@@ -93,7 +94,7 @@ class Registration extends React.Component{
 								/>
 								<label
 									className="form__label"
-									for="remember"
+									htmlFor="remember"
 								>
 									Remember me
 								</label>
