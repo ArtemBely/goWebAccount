@@ -1,0 +1,325 @@
+.cps_wrap_footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+}
+
+.cps_footer {
+  width: 1291px;
+  height: 281px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cps_company_year {
+  margin-top: 65px;
+}
+
+.cps_footer_list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.cps_footer_link {
+  font-size: 22px;
+  color: black;
+  font-family: "Roboto Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.cps_company_year {
+  font-size: 22px;
+  font-family: "Roboto Regular", sans-serif;
+}
+
+.footer_icons {
+  width: 408px;
+  margin-top: 65px;
+}
+
+.icons_link {
+  margin-left: 18px;
+}
+
+.icons_logo {
+  width: 33px;
+  height: 31px;
+}
+
+.cmp_header_arrow {
+  margin-left: -33px;
+}
+
+.cps_footer_phone {
+  display: none;
+}
+
+@media (min-width: 992px) and (max-width: 1290px) {
+  .cmp_navigation {
+    width: 992px;
+    padding: 0 19px;
+  }
+
+  .cmp_header_item {
+    font-size: 18px;
+  }
+
+  .cmp_header_item {
+    margin-left: 40px;
+  }
+
+  .cmp_header_arrow {
+    width: 18px;
+    height: 16px;
+  }
+
+  .cmp_header_logo {
+    width: 109px;
+    height: 40px;
+  }
+
+  .cps_footer {
+    width: 992px;
+    padding: 0 71px 0 88px;
+  }
+
+  .cmp_footer_logo {
+    width: 137px;
+    height: 50px;
+  }
+
+  .cps_footer_link,
+  .cps_footer_link {
+    font-size: 18px;
+  }
+
+  .icons_logo {
+    width: 27px;
+    height: 27px;
+  }
+
+  .footer_icons {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cps_company_year {
+    margin-top: 68px;
+    font-size: 18px;
+  }
+
+  .cps_footer_item {
+    margin-left: 65px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .cmp_navigation {
+    width: 769px;
+    padding: 0 19px;
+  }
+
+  .cmp_header_item {
+    font-size: 16px;
+  }
+
+  .cmp_header_item {
+    margin-left: 25px;
+  }
+
+  .cmp_header_list {
+    padding: 0;
+  }
+
+  .cmp_header_arrow {
+    width: 14px;
+    height: 13px;
+    margin-left: 0;
+  }
+
+  .cmp_header_logo {
+    width: 109px;
+    height: 40px;
+  }
+
+  .cps_footer {
+    width: 769px;
+    padding: 0 20px 0 22px;
+  }
+
+  .cmp_footer_logo {
+    width: 101px;
+    height: 37px;
+  }
+
+  .cps_footer_link,
+  .cps_footer_link {
+    font-size: 16px;
+  }
+
+  .icons_logo {
+    width: 27px;
+    height: 27px;
+  }
+
+  .footer_icons {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cps_company_year {
+    margin-top: 79px;
+    font-size: 16px;
+  }
+
+  .cps_footer_item {
+    margin-left: 72px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .cmp_header_list {
+    display: none;
+  }
+
+  .cmp_header_arrow {
+    display: none;
+  }
+
+  .burger_menu {
+    display: block;
+  }
+
+  .menu_img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cmp_navigation {
+    width: 576px;
+    padding: 0 19px;
+  }
+
+  .cmp_header_logo {
+    width: 109px;
+    height: 40px;
+  }
+
+  .cps_footer {
+    width: 576px;
+    padding: 0 20px 0 23px;
+  }
+
+  .cmp_footer_logo {
+    width: 98px;
+    height: 36px;
+  }
+
+  .cps_footer_link,
+  .cps_footer_link {
+    font-size: 16px;
+  }
+
+  .icons_logo {
+    width: 22px;
+    height: 22px;
+  }
+
+  .icons_link {
+    margin-left: 22px;
+  }
+
+  .footer_icons {
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    /* width: 272px; */
+  }
+
+  .cps_company_year {
+    margin-top: 65px;
+    font-size: 16px;
+  }
+
+  .cps_footer_item {
+    margin-left: 69px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .cmp_header_list {
+    display: none;
+  }
+
+  .cmp_header_arrow {
+    display: none;
+  }
+
+  .burger_menu {
+    display: block;
+  }
+
+  .cmp_navigation {
+    width: 320px;
+    padding: 0 19px;
+  }
+
+  .cmp_header_logo {
+    width: 109px;
+    height: 40px;
+  }
+
+  .menu_img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cps_footer {
+    display: none;
+  }
+
+  .cps_footer_phone {
+    display: block;
+    width: 320px;
+  }
+
+  .cmp_footer_logo {
+    width: 98px;
+    height: 36px;
+    margin-top: 30px;
+  }
+
+  .cps_footer_link {
+    font-size: 16px;
+    margin-top: 28px;
+  }
+
+  .footer_icons {
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+  }
+
+  .icons_link {
+    margin-left: 0;
+  }
+
+  .icons_logo {
+      width: 22px;
+      height: 22px;
+  }
+
+  .cps_company_year {
+      margin-top: 25px;
+      font-size: 16px;
+  }
+}

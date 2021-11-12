@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Header from "./Header1";
+import Footer from "./Footer";
 
 class Enter extends React.Component {
 	constructor(props) {
@@ -53,7 +55,9 @@ class Enter extends React.Component {
 
 	render() {
 		return (
+			
 			<>
+			<Header />
 				<div className="wrap_enter">
 					{this.showMsg1()}
 					{this.showMsg2()}
@@ -153,6 +157,7 @@ class Enter extends React.Component {
 						</button>
 					</form>           */}
 				</div>
+				<Footer />
 			</>
 		);
 	}

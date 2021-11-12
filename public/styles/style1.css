@@ -1,14 +1,26 @@
-
-.reg {
-  position: relative;
-  width: 1290px;
+/* .reg {
+  /* position: relative; */
+  /* width: 1290px;
   display: grid;
+  display: flex;
+  top: 0px;
   justify-content: center;
   top: 300px;
+}  */
+
+.wrap_reg {
+  max-width: 667px;
+  margin: 75px auto 42px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
 }
+
 .wrap_signup {
   display: grid;
   width: 400px;
+  margin: 100px auto;
 }
 .reg_link {
   position: relative;
@@ -50,7 +62,7 @@
   line-height: 40px;
   text-decoration-line: underline;
   grid-column: 2 / 3;
-  color: black
+  color: black;
 }
 #unsubscribe2 {
   grid-column: 4 / 5;
@@ -161,7 +173,7 @@
   font-weight: 400;
   line-height: 25px;
   padding: 7px;
-  border: 1px solid #6D6D6D;
+  border: 1px solid #6d6d6d;
   box-sizing: border-box;
   border-radius: 0px;
 }
@@ -230,7 +242,7 @@
   padding: 7px;
   padding-bottom: 64px;
   padding-left: 7px;
-  border: 1px solid #6D6D6D;
+  border: 1px solid #6d6d6d;
   box-sizing: border-box;
   border-radius: 0px;
 }
@@ -267,4 +279,15 @@
 }
 .detectDelete {
   position: relative;
+}
+
+@media (min-width: 992px) and (max-width: 1290px) {
+  .wrap_reg {
+    max-width: 599px;
+    margin: 40px auto 25px;
+  }
+
+  .form__paragraph {
+    font-size: 18px;
+  }
 }

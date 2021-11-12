@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, NavLink } from 'react-router-dom';
-import Header from './Header';
 import search from '../../public/images/Ellipse 40.svg';
 import { getUsers } from './fetchData';
 

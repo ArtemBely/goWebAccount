@@ -1,6 +1,6 @@
 .wrap_enter {
   max-width: 667px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   margin: 75px auto 42px;
   position: relative;
   border-radius: 20px;
@@ -15,19 +15,19 @@
   position: relative;
 }
 .form__title {
-  font-family: 'Roboto Regular', sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 30px;
   line-height: 35px;
   font-weight: 700;
   margin: 0;
-  color: #1A202C;
+  color: #1a202c;
 }
 .form__paragraph {
-  font-family: 'Roboto Regular', sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
-  margin: 0 0 25px;
+  margin: 5px 0 25px;
   color: #000;
 }
 
@@ -38,7 +38,7 @@
 
 .form__password {
   text-decoration: underline;
-  font-family: 'Roboto Regular', sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   line-height: 23px;
   font-weight: 400;
@@ -54,31 +54,32 @@
   box-sizing: border-box;
   background-color: transparent;
   color: #000;
-  font-family: 'Roboto Regular', sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   line-height: 140%;
   font-weight: 400;
 }
 
-.form__input:focus, .form__input:focus-visible  {
+.form__input:focus,
+.form__input:focus-visible {
   color: #000;
   border-color: #000;
 }
 
 .form__input::placeholder {
   color: #808080;
-  font-family: 'Roboto Regular', sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   line-height: 140%;
   font-weight: 400;
 }
 
 .form__button {
-  border: 2px solid #FFAC22;
+  border: 2px solid #ffac22;
   border-radius: 7px;
-  padding: 10px 30px 12px;
+  padding: 10px 21px 12px;
   color: #000;
-  font-family: 'Roboto Regular', sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
@@ -94,7 +95,7 @@
 .form__label {
   margin-bottom: 5px;
   color: #000;
-  font-family: 'Roboto Regular', sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -109,20 +110,174 @@
 
 .form__checkbox {
   -webkit-appearance: none;
-	-moz-appearance: none;
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	line-height: 20px;
-	background-color: #F7FAFC;
-	border: 1px solid #808080;
+  -moz-appearance: none;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  line-height: 20px;
+  background-color: #f7fafc;
+  border: 1px solid #808080;
   border-radius: 8px;
-	transition: all 0.2s;
-	outline: none;
-	cursor: pointer;
-  margin: 0 11px 0 0;	
+  transition: all 0.2s;
+  outline: none;
+  cursor: pointer;
+  margin: 0 11px 0 0;
 }
 
 .form__checkbox:checked {
-  background-color: #FFAC22;
+  background-color: #ffac22;
+}
+@media (min-width: 992px) and (max-width: 1290px) {
+  .wrap_enter {
+    margin: 50px auto 20px;
+  }
+
+  .form__paragraph,
+  .form__label,
+  .form__input,
+  .form__button,
+  .form__password {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrap_enter {
+    height: 572px;
+    max-width: 727px;
+    margin: 50px auto 25px;
+  }
+
+  .form__paragraph,
+  .form__label,
+  .form__input,
+  .form__button,
+  .form__password {
+    font-size: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .wrap_enter {
+    height: 485px;
+    max-width: 536px;
+    margin: 40px auto 25px;
+  }
+
+  .form__paragraph,
+  .form__label,
+  .form__input,
+  .form__button,
+  .form__password {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .wrap_enter {
+    height: 415px;
+    max-width: 320px;
+    margin: 25px auto 10px;
+    padding: 0 20px;
+  }
+
+  .form__title {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .form__paragraph {
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 5px;
+  }
+
+  .form__label {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .form__checkbox {
+    font-size: 16px;
+  }
+
+  .form__container {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 0;
+    align-items: start;
+  }
+
+  .form__button {
+    font-size: 16px;
+    padding: 5px 25px 5px;
+    max-width: 130px;
+    /* margin-bottom: 7px; */
+  }
+
+  .form__password {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .form__input {
+    font-size: 16px;
+    padding: 10px 20px 10px;
+  }
+
+  .wrap_reg {
+    max-width: 320px;
+    margin: 25px auto 10px;
+  }
+
+  .wrap_signup {
+    margin: 29px auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1290px) {
+  .wrap_reg {
+    max-width: 599px;
+    margin: 40px auto 25px;
+  }
+
+  .wrap_signup {
+    margin: 68px auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrap_reg {
+    max-width: 729px;
+    margin: 40px auto 25px;
+  }
+
+  .wrap_signup {
+    margin: 111px auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .wrap_reg {
+    max-width: 536px;
+    margin: 40px auto 25px;
+  }
+
+  .wrap_signup {
+    margin: 68px auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .wrap_reg {
+    max-width: 320px;
+    margin: 25px auto 10px;
+  }
+
+  .wrap_signup {
+    margin: 29px auto;
+  }
+
+  .wrap_signup {
+    padding: 0 20 px;
+    display: table-cell;
+  }
 }

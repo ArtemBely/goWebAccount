@@ -1,0 +1,43 @@
+.cmp_wrap_header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cmp_navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1291px;
+  height: 90px;
+  align-items: center;
+}
+
+.cmp_header_list {
+  display: flex;
+  list-style: none;
+}
+
+.cmp_header_item{
+    text-decoration: none;
+    margin-left: 50px;
+    font-family: 'Roboto Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: black;
+}
+
+.cmp_header_link {
+  color: black;
+}
+
+.cmp_header_logo {
+  width: 155px;
+  height: 57px;
+}
+
+.burger_menu{
+  display: none;
+} 
