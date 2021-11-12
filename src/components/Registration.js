@@ -13,7 +13,7 @@ class Registration extends React.Component {
       msg = window.__INITIAL_DATA__;
     }
     this.state = {
-      msg,
+      msg
     };
   }
 
@@ -49,7 +49,7 @@ class Registration extends React.Component {
         <div className="wrap_reg">
           <p className="reg">
             {this.showSuccess()}
-            <form action="/signup/signin" method="POST" className="wrap_signup">
+            <form action="/signup" method="POST" className="wrap_signup">
               <h2 className="form__title">Registration</h2>
               <p className="form__paragraph">
                 Already Registered?
@@ -66,6 +66,7 @@ class Registration extends React.Component {
                 id="email"
                 placeholder="email@site.com"
                 className="form__input"
+                required
               />
               <label htmlFor="password" className="form__label">
                 Password
@@ -75,6 +76,7 @@ class Registration extends React.Component {
                 name="password"
                 placeholder="●●●●●●●●●●●●●●"
                 className="form__input"
+                required
                 value={this.state.value}
                 onChange={this.onChange}
               />
@@ -94,8 +96,7 @@ class Registration extends React.Component {
               <button
                 type="submit"
                 className="form__button"
-                disabled={!this.state.value}
-                onClick={this.add}
+
               >
                 Register now
               </button>
