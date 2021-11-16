@@ -129,7 +129,9 @@
 }
 @media (min-width: 992px) and (max-width: 1290px) {
   .wrap_enter {
-    margin: 50px auto 20px;
+    margin: 40px auto 20px;
+    max-width: 599px;
+    height: 503px;
   }
 
   .form__paragraph,
@@ -145,7 +147,7 @@
   .wrap_enter {
     height: 572px;
     max-width: 727px;
-    margin: 50px auto 25px;
+    margin: 40px auto 25px;
   }
 
   .form__paragraph,
@@ -177,7 +179,7 @@
     height: 415px;
     max-width: 320px;
     margin: 25px auto 10px;
-    padding: 0 20px;
+    padding: 22px 20px 0;
   }
 
   .form__title {
@@ -209,7 +211,7 @@
 
   .form__button {
     font-size: 16px;
-    padding: 5px 25px 5px;
+    padding: 5px 15px 5px;
     max-width: 130px;
     /* margin-bottom: 7px; */
   }
@@ -238,6 +240,7 @@
   .wrap_reg {
     max-width: 599px;
     margin: 40px auto 25px;
+    height: 503px;
   }
 
   .wrap_signup {
@@ -247,12 +250,14 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .wrap_reg {
-    max-width: 729px;
+    max-width: 727px;
     margin: 40px auto 25px;
+    height: 572px;
   }
 
   .wrap_signup {
-    margin: 111px auto;
+    margin: 68px auto;
+    width: 367px;
   }
 }
 
@@ -260,6 +265,7 @@
   .wrap_reg {
     max-width: 536px;
     margin: 40px auto 25px;
+    height: 485px;
   }
 
   .wrap_signup {
@@ -270,14 +276,11 @@
   .wrap_reg {
     max-width: 320px;
     margin: 25px auto 10px;
+    height: 415px;
   }
 
   .wrap_signup {
-    margin: 29px auto;
-  }
-
-  .wrap_signup {
-    padding: 0 20 px;
+    padding: 29px 20px 0;
     display: table-cell;
   }
 }

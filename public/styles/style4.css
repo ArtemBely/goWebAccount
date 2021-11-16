@@ -289,6 +289,7 @@
   .cps_footer_phone {
     display: block;
     width: 320px;
+    padding: 0 20px;
   }
 
   .cmp_footer_logo {
@@ -306,7 +307,7 @@
     margin-top: 33px;
     display: flex;
     justify-content: space-between;
-    width: 320px;
+    width: 280px;
   }
 
   .icons_link {
@@ -321,5 +322,6 @@
   .cps_company_year {
       margin-top: 25px;
       font-size: 16px;
+      margin-bottom: 55px;
   }
 }
