@@ -265,7 +265,7 @@ function Profile() {
               <img src={closed} alt="logo" className="burger_menu_close" onClick={closeMenu} />
             </div>
             <div className="menu_burger_item">
-              <p className="header_nav_item">Cloud computing</p>
+              <p className="header_nav_item item_computing">Cloud computing</p>
               <p className="header_nav_item">i.ivanov</p>
               <p className="header_nav_item">BTC 0,05</p>
             </div>
@@ -275,7 +275,7 @@ function Profile() {
       <div className="main_wrap_acc">
         <div className="acc_wrap">
           <div className="acc_text">
-            <h3 className="acc_heading">Cloud computing</h3>
+            <h3 className="acc_heading item_computing">Cloud computing</h3>
             <p className="acc_paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt
@@ -325,7 +325,7 @@ function Profile() {
             <p className="data_item data_item_title">Wasted resources</p>
             <p className="data_item data_item_title">Duration</p>
             <p className="data_item data_item_title">Price</p>
-            <p className="data_item data_item_title">Date period</p>
+            <p className="data_item data_item_title data_item_period">Date period</p>
             <p className="data_item process">In process</p>
             <p className="data_item"></p>
             <p className="data_item"></p>
