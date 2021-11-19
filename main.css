@@ -2,20 +2,21 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .cmp_navigation {
   display: flex;
-  justify-content: space-between;
   width: 1291px;
-  height: 90px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .cmp_header_list {
   display: flex;
   list-style: none;
+  margin-left: 276px;
+  padding: 0;
+  margin-top: 50px;
 }
 
 .cmp_header_item{
@@ -36,29 +37,31 @@
 .cmp_header_logo {
   width: 155px;
   height: 57px;
+  margin-top: 29px;
 }
 
 .burger_menu{
   display: none;
 } 
 .cps_wrap_footer {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #f9f9f9;
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+  position: relative;
 }
 
 .cps_footer {
   width: 1291px;
   height: 281px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.cps_company_year {
-  margin-top: 65px;
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  flex-wrap: wrap;
 }
 
 .cps_footer_list {
@@ -66,6 +69,9 @@
   list-style: none;
   padding: 0;
   justify-content: space-between;
+  margin-top: 65px;
+  margin-left: 727px;
+  width: 408px;
 }
 
 .cps_footer_link {
@@ -76,27 +82,41 @@
   font-weight: normal;
 }
 
+.cmp_footer_link {
+  margin-top: 48px;
+}
+
 .cps_company_year {
   font-size: 22px;
   font-family: "Roboto Regular", sans-serif;
 }
 
 .footer_icons {
-  width: 408px;
-  margin-top: 65px;
+  /* width: 408px; */
+  margin-left: 739px;
+}
+
+.footer_social {
+  display: flex;
+}
+
+.footer_nav {
+  display: flex;
+  /* margin-left: 150px; */
 }
 
 .icons_link {
-  margin-left: 18px;
+  margin-left: 21px;
 }
 
 .icons_logo {
-  width: 33px;
-  height: 31px;
+  width: 29px;
+  height: 29px;
 }
 
 .cmp_header_arrow {
-  margin-left: -33px;
+  margin-left: 50px;
+  margin-top: 53px;
 }
 
 .cps_footer_phone {
@@ -106,7 +126,6 @@
 @media (min-width: 992px) and (max-width: 1290px) {
   .cmp_navigation {
     width: 992px;
-    padding: 0 19px;
   }
 
   .cmp_header_item {
@@ -117,24 +136,46 @@
     margin-left: 40px;
   }
 
+  .cmp_header_list {
+    margin-left: 84px;
+    margin-top: 24px;
+  }
+
   .cmp_header_arrow {
     width: 18px;
     height: 16px;
+    margin-top: 26px;
   }
 
   .cmp_header_logo {
     width: 109px;
     height: 40px;
+    margin: 13px 0 13px 19px;
   }
 
   .cps_footer {
     width: 992px;
-    padding: 0 71px 0 88px;
+    /* padding: 0 71px 0 88px; */
   }
 
   .cmp_footer_logo {
     width: 137px;
     height: 50px;
+    margin-left: 88px;
+  }
+
+  .footer_nav {
+    height: 90px;
+  }
+
+  .footer_social {
+    height: 50px;
+  }
+
+  .cps_footer_list {
+    margin-top: 65px;
+    margin-left: 339px;
+    width: 357px;
   }
 
   .cps_footer_link,
@@ -148,25 +189,26 @@
   }
 
   .footer_icons {
-    margin-top: 80px;
+    margin-top: 0;
     display: flex;
     justify-content: space-between;
+    margin-left: 317px;
   }
 
   .cps_company_year {
-    margin-top: 68px;
+    margin-top: 0px;
     font-size: 18px;
+    margin-left: 88px;
   }
 
-  .cps_footer_item {
-    margin-left: 65px;
+  .icons_link {
+    margin-left: 22px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .cmp_navigation {
-    width: 769px;
-    padding: 0 19px;
+    width: 768px;
   }
 
   .cmp_header_item {
@@ -179,22 +221,47 @@
 
   .cmp_header_list {
     padding: 0;
+    margin-top: 25px;
   }
 
   .cmp_header_arrow {
     width: 14px;
     height: 13px;
-    margin-left: 0;
+    margin-top: 28px;
+  }
+
+  .cmp_header_list {
+    margin-left: 7px;
+  }
+
+  .cmp_header_arrow {
+    margin-left: 25px;
   }
 
   .cmp_header_logo {
     width: 109px;
     height: 40px;
+    margin: 13px 0 13px 19px;
   }
 
   .cps_footer {
-    width: 769px;
-    padding: 0 20px 0 22px;
+    width: 768px;
+    /* padding: 0 22px 0 20px; */
+    height: 261px;
+  }
+
+  .footer_nav {
+    width: 726px;
+    margin-left: 20px;
+  }
+
+  .cps_footer_list {
+    margin-left: 293px;
+    width: 332px;
+  }
+
+  .cps_footer_item {
+    margin-left: 0;
   }
 
   .cmp_footer_logo {
@@ -213,18 +280,19 @@
   }
 
   .footer_icons {
-    margin-top: 80px;
     display: flex;
     justify-content: space-between;
+    margin-left: 5px;
   }
 
   .cps_company_year {
-    margin-top: 79px;
     font-size: 16px;
   }
 
-  .cps_footer_item {
-    margin-left: 72px;
+  .footer_social {
+    width: 726px;
+    justify-content: space-between;
+    margin-left: 20px;
   }
 }
 
@@ -239,26 +307,34 @@
 
   .burger_menu {
     display: block;
+    margin-left: 402px;
   }
 
   .menu_img {
     width: 24px;
     height: 24px;
+    margin-top: 25px;
   }
 
   .cmp_navigation {
     width: 576px;
-    padding: 0 19px;
   }
 
   .cmp_header_logo {
     width: 109px;
     height: 40px;
+    margin: 13px 0 13px 20px;
   }
 
   .cps_footer {
     width: 576px;
-    padding: 0 20px 0 23px;
+    /* padding: 0 23px 0 20px; */
+    height: 251px;
+  }
+
+  .cps_footer_list {
+    margin-left: 103px;
+    width: 326px;
   }
 
   .cmp_footer_logo {
@@ -272,29 +348,39 @@
   }
 
   .icons_logo {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
   }
 
   .icons_link {
-    margin-left: 22px;
+    margin-left: 20px;
   }
 
   .footer_icons {
-    margin-top: 72px;
-    display: flex;
-    justify-content: space-between;
+    margin-left: 102px;
+    /* display: flex; */
+    /* justify-content: space-between; */
     /* width: 272px; */
   }
 
+  .footer_nav {
+    width: 533px;
+    margin-left: 20px;
+  }
+
   .cps_company_year {
-    margin-top: 65px;
+    /* margin-top: 65px; */
     font-size: 16px;
   }
 
-  .cps_footer_item {
-    margin-left: 69px;
+  .footer_social {
+    width: 533px;
+    margin-left: 20px;
   }
+
+  /* .cps_footer_item {
+    margin-left: 69px;
+  } */
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
@@ -312,17 +398,26 @@
 
   .cmp_navigation {
     width: 320px;
-    padding: 0 19px;
+    /* padding: 0 19px; */
   }
 
   .cmp_header_logo {
     width: 109px;
     height: 40px;
+    margin: 13px 0 13px 20px;
   }
 
   .menu_img {
     width: 24px;
     height: 24px;
+    margin-top: 23px;
+    margin-left: 150px;
+  }
+
+  .menu_img_acc {
+    width: 24px;
+    height: 24px;
+    margin-right: 17px;
   }
 
   .cps_footer {
@@ -331,8 +426,7 @@
 
   .cps_footer_phone {
     display: block;
-    width: 320px;
-    padding: 0 20px;
+    width: 280px;
   }
 
   .cmp_footer_logo {
@@ -351,6 +445,8 @@
     display: flex;
     justify-content: space-between;
     width: 280px;
+    margin: 0;
+    margin-top: 33px;
   }
 
   .icons_link {
@@ -358,14 +454,20 @@
   }
 
   .icons_logo {
-      width: 22px;
-      height: 22px;
+    width: 22px;
+    height: 22px;
   }
 
   .cps_company_year {
-      margin-top: 25px;
-      font-size: 16px;
-      margin-bottom: 55px;
+    margin-top: 25px;
+    font-size: 16px;
+    margin-bottom: 55px;
+  }
+
+  .cps_footer_list {
+    margin: 0;
+    width: 280px;
+    margin-top: 28px;
   }
 }
 
@@ -530,6 +632,14 @@ body {
 
 .mining_btn {
   max-width: 38px;
+  color:grey;
+  border: 1px solid grey;
+}
+
+.mining_title,
+.mining_text,
+.mining_hint {
+  color: grey;
 }
 
 .data_wrap_phone-1 {
@@ -708,6 +818,8 @@ body {
     margin: 0 auto;
   }
 
+
+
   .acc_text {
     width: 768px;
     margin: 0 auto;
@@ -776,6 +888,8 @@ body {
     width: 576px;
     margin: 0 auto;
   }
+
+
 
   .acc_text {
     width: 576px;
@@ -866,6 +980,7 @@ body {
     margin: 0 auto;
   }
 
+
   .acc_text {
     width: 320px;
     margin: 0 auto;
@@ -877,10 +992,6 @@ body {
 
   .header_wrap {
     width: 320px; 
-  }
-
-  .menu_img {
-    margin-right: 22px;
   }
 
   .header_logo {
@@ -1035,17 +1146,21 @@ body {
 
 .wrap_reg {
   max-width: 667px;
+  height: 587px;
   margin: 75px auto 42px;
   background: #f9f9f9;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   border-radius: 20px;
+  align-items: center;
+
 }
 
 .wrap_signup {
   display: grid;
-  width: 400px;
-  margin: 100px auto;
+  width: 367px;
+  /* margin: 100px auto; */
+  margin-left: 150px;
 }
 .reg_link {
   position: relative;
@@ -1319,17 +1434,19 @@ body {
 
 .wrap_enter {
   max-width: 667px;
+  height: 587px;
   background-color: #f9f9f9;
   margin: 75px auto 42px;
   position: relative;
   border-radius: 20px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .wrap_formEnter {
   width: 367px;
-  margin: 100px auto;
+  /* margin: 100px auto; */
+  margin-left: 150px;
   display: grid;
   position: relative;
 }
@@ -1480,8 +1597,8 @@ body {
 @media (min-width: 576px) and (max-width: 767px) {
   .wrap_enter {
     height: 485px;
-    max-width: 536px;
-    margin: 40px auto 25px;
+    width: 536px;
+    margin: 25px auto 25px;
   }
 
   .form__paragraph,
@@ -1498,7 +1615,7 @@ body {
     height: 415px;
     max-width: 320px;
     margin: 25px auto 10px;
-    padding: 22px 20px 0;
+    padding-top: 22px;
   }
 
   .form__title {
@@ -1543,6 +1660,7 @@ body {
   .form__input {
     font-size: 16px;
     padding: 10px 20px 10px;
+    margin-top: 5px;
   }
 
   .wrap_reg {
@@ -1562,33 +1680,44 @@ body {
     height: 503px;
   }
 
-  .wrap_signup {
-    margin: 68px auto;
+  .wrap_signup,
+  .wrap_formEnter{
+    margin-left: 116px;
   }
+
+  
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .wrap_reg {
-    max-width: 727px;
+    max-width: 729px;
     margin: 40px auto 25px;
     height: 572px;
   }
 
   .wrap_signup {
-    margin: 68px auto;
     width: 367px;
+    margin-left: 181px;
+  }
+
+  .wrap_formEnter {
+    margin-left: 181px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .wrap_reg {
     max-width: 536px;
-    margin: 40px auto 25px;
+    margin: 25px auto 25px;
     height: 485px;
   }
 
   .wrap_signup {
-    margin: 68px auto;
+   margin-left: 84px;
+  }
+
+  .wrap_formEnter {
+    margin-left: 84px;
   }
 }
 @media (min-width: 320px) and (max-width: 575px) {
@@ -1599,8 +1728,14 @@ body {
   }
 
   .wrap_signup {
-    padding: 29px 20px 0;
+    padding: 0 20px 0;
     display: table-cell;
   }
+
+  .wrap_formEnter {
+    margin-left: 20px;
+    width: 280px;
+  }
+
 }
 

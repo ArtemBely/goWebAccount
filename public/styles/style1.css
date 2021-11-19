@@ -10,17 +10,21 @@
 
 .wrap_reg {
   max-width: 667px;
+  height: 587px;
   margin: 75px auto 42px;
   background: #f9f9f9;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   border-radius: 20px;
+  align-items: center;
+
 }
 
 .wrap_signup {
   display: grid;
-  width: 400px;
-  margin: 100px auto;
+  width: 367px;
+  /* margin: 100px auto; */
+  margin-left: 150px;
 }
 .reg_link {
   position: relative;

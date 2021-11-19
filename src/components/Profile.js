@@ -257,7 +257,7 @@ function Profile() {
             <p className="header_nav_item">BTC 0,05</p>
           </div>
           <Link className="burger_menu_link" to="#">
-          <img src={burger} alt="menu" className="menu_img" onClick={clickMenu} />
+          <img src={burger} alt="menu" className="menu_img_acc" onClick={clickMenu} />
           </Link>
           <div className="burger_menu_lk burger_menu_open_lk">
             <div className="burger_menu_header">
@@ -305,14 +305,14 @@ function Profile() {
               </Link>
             </div>
             <div className="content_item item_mining">
-              <h3 className="content_title">Mining</h3>
-              <p className="content_text">
+              <h3 className="content_title mining_title">Mining</h3>
+              <p className="content_text mining_text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt
               </p>
-              <p className="content_hint">Settings → Start</p>
+              <p className="content_hint mining_hint">Settings → Start</p>
               <Link className="content_link" to="/">
-                <p className="content_btn mining_btn">Soon</p>
+                <p className="content_btn mining_btn ">Soon</p>
               </Link>
             </div>
           </div>

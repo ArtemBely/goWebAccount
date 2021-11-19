@@ -159,6 +159,14 @@ body {
 
 .mining_btn {
   max-width: 38px;
+  color:grey;
+  border: 1px solid grey;
+}
+
+.mining_title,
+.mining_text,
+.mining_hint {
+  color: grey;
 }
 
 .data_wrap_phone-1 {
@@ -337,6 +345,8 @@ body {
     margin: 0 auto;
   }
 
+
+
   .acc_text {
     width: 768px;
     margin: 0 auto;
@@ -405,6 +415,8 @@ body {
     width: 576px;
     margin: 0 auto;
   }
+
+
 
   .acc_text {
     width: 576px;
@@ -495,6 +507,7 @@ body {
     margin: 0 auto;
   }
 
+
   .acc_text {
     width: 320px;
     margin: 0 auto;
@@ -506,10 +519,6 @@ body {
 
   .header_wrap {
     width: 320px; 
-  }
-
-  .menu_img {
-    margin-right: 22px;
   }
 
   .header_logo {

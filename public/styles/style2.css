@@ -1,16 +1,18 @@
 .wrap_enter {
   max-width: 667px;
+  height: 587px;
   background-color: #f9f9f9;
   margin: 75px auto 42px;
   position: relative;
   border-radius: 20px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .wrap_formEnter {
   width: 367px;
-  margin: 100px auto;
+  /* margin: 100px auto; */
+  margin-left: 150px;
   display: grid;
   position: relative;
 }
@@ -161,8 +163,8 @@
 @media (min-width: 576px) and (max-width: 767px) {
   .wrap_enter {
     height: 485px;
-    max-width: 536px;
-    margin: 40px auto 25px;
+    width: 536px;
+    margin: 25px auto 25px;
   }
 
   .form__paragraph,
@@ -179,7 +181,7 @@
     height: 415px;
     max-width: 320px;
     margin: 25px auto 10px;
-    padding: 22px 20px 0;
+    padding-top: 22px;
   }
 
   .form__title {
@@ -224,6 +226,7 @@
   .form__input {
     font-size: 16px;
     padding: 10px 20px 10px;
+    margin-top: 5px;
   }
 
   .wrap_reg {
@@ -243,33 +246,44 @@
     height: 503px;
   }
 
-  .wrap_signup {
-    margin: 68px auto;
+  .wrap_signup,
+  .wrap_formEnter{
+    margin-left: 116px;
   }
+
+  
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .wrap_reg {
-    max-width: 727px;
+    max-width: 729px;
     margin: 40px auto 25px;
     height: 572px;
   }
 
   .wrap_signup {
-    margin: 68px auto;
     width: 367px;
+    margin-left: 181px;
+  }
+
+  .wrap_formEnter {
+    margin-left: 181px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .wrap_reg {
     max-width: 536px;
-    margin: 40px auto 25px;
+    margin: 25px auto 25px;
     height: 485px;
   }
 
   .wrap_signup {
-    margin: 68px auto;
+   margin-left: 84px;
+  }
+
+  .wrap_formEnter {
+    margin-left: 84px;
   }
 }
 @media (min-width: 320px) and (max-width: 575px) {
@@ -280,7 +294,13 @@
   }
 
   .wrap_signup {
-    padding: 29px 20px 0;
+    padding: 0 20px 0;
     display: table-cell;
   }
+
+  .wrap_formEnter {
+    margin-left: 20px;
+    width: 280px;
+  }
+
 }

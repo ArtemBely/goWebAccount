@@ -5,7 +5,7 @@ import '../../public/styles/style1.css';
 import '../../public/styles/style2.css';
 import '../../public/styles/style3.css';
 import '../../public/styles/style4.css';
-// import '../../public/styles/style5.css';
+import '../../public/styles/style5.css';
 import Header from "./Header1";
 import Footer from "./Footer";
 

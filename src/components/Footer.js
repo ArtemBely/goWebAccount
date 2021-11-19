@@ -22,10 +22,10 @@ function Footer() {
           <Link className="cmp_footer_link" to="/">
             <img src={logo} alt="logo" className="cmp_footer_logo" />
           </Link>
-          <div className="cps_company_year">© GoWeb, 2015-2021</div>
+          <FooterLink items={footerItem} />
         </div>
         <div className="footer_social">
-          <FooterLink items={footerItem} />
+          <div className="cps_company_year">© GoWeb,2021</div>
           <div className="footer_icons">
             <Link
               className="icons_link"
@@ -63,48 +63,48 @@ function Footer() {
           </div>
         </div>
       </div>
-        <div className="cps_footer_phone"> 
+      <div className="cps_footer_phone">
         <Link className="cmp_footer_link" to="/">
-            <img src={logo} alt="logo" className="cmp_footer_logo" />
+          <img src={logo} alt="logo" className="cmp_footer_logo" />
+        </Link>
+        <FooterLink items={footerItem} />
+        <div className="footer_icons">
+          <Link
+            className="icons_link"
+            to="https://www.linkedin.com/company/gowebnw/about/"
+          >
+            <img src={inst} alt="logo" className="icons_logo" />
           </Link>
-          <FooterLink items={footerItem} />
-          <div className="footer_icons">
-            <Link
-              className="icons_link"
-              to="https://www.linkedin.com/company/gowebnw/about/"
-            >
-              <img src={inst} alt="logo" className="icons_logo" />
-            </Link>
-            <Link className="icons_link" to="https://www.facebook.com/GWSTO">
-              <img src={faceebook} alt="logo" className="icons_logo" />
-            </Link>
-            <Link className="icons_link" to="https://t.me/GoWebAI">
-              <img src={telegram} alt="logo" className="icons_logo" />
-            </Link>
-            <Link className="icons_link" to="https://twitter.com/GoWebSTO">
-              <img src={twitter} alt="logo" className="icons_logo" />
-            </Link>
-            <Link className="icons_link" to="https://discord.com/">
-              <img src={discord} alt="logo" className="icons_logo" />
-            </Link>
-            <Link
-              className="icons_link"
-              to="https://bitcointalk.org/index.php?topic=5103868.msg49489767#msg49489767"
-            >
-              <img src={market} alt="logo" className="icons_logo" />
-            </Link>
-            <Link
-              className="icons_link"
-              to="https://github.com/AljonaYudina/GoWeb.git"
-            >
-              <img src={github} alt="logo" className="icons_logo" />
-            </Link>
-            <Link className="icons_link" to="#">
-              <img src={bitcoin} alt="logo" className="icons_logo" />
-            </Link>
-          </div>
-          <div className="cps_company_year">© GoWeb, 2015-2021</div>
+          <Link className="icons_link" to="https://www.facebook.com/GWSTO">
+            <img src={faceebook} alt="logo" className="icons_logo" />
+          </Link>
+          <Link className="icons_link" to="https://t.me/GoWebAI">
+            <img src={telegram} alt="logo" className="icons_logo" />
+          </Link>
+          <Link className="icons_link" to="https://twitter.com/GoWebSTO">
+            <img src={twitter} alt="logo" className="icons_logo" />
+          </Link>
+          <Link className="icons_link" to="https://discord.com/">
+            <img src={discord} alt="logo" className="icons_logo" />
+          </Link>
+          <Link
+            className="icons_link"
+            to="https://bitcointalk.org/index.php?topic=5103868.msg49489767#msg49489767"
+          >
+            <img src={market} alt="logo" className="icons_logo" />
+          </Link>
+          <Link
+            className="icons_link"
+            to="https://github.com/AljonaYudina/GoWeb.git"
+          >
+            <img src={github} alt="logo" className="icons_logo" />
+          </Link>
+          <Link className="icons_link" to="#">
+            <img src={bitcoin} alt="logo" className="icons_logo" />
+          </Link>
         </div>
+        <div className="cps_company_year">© GoWeb, 2015-2021</div>
+      </div>
     </footer>
   );
 }
