@@ -63,9 +63,13 @@
 }
 
 .form__input:focus,
+.form__input:active,
 .form__input:focus-visible {
+  outline: 0;
+  outline-offset: 0;
   color: #000;
   border-color: #000;
+  border: 2px solid black;
 }
 
 .form__input::placeholder {
@@ -86,7 +90,7 @@
   line-height: 28px;
   font-weight: 500;
   background-color: transparent;
-  max-width: 170px;
+  max-width: 160px;
 }
 
 .form__button:disabled {
@@ -129,6 +133,31 @@
 .form__checkbox:checked {
   background-color: #ffac22;
 }
+
+.form__input:checked{
+  border-color: black;
+}
+
+.eye_pass {
+  position: absolute;
+    top: 247px;
+    left: 325px;
+}
+
+.eye_pass_black {
+  display: none;
+  position: absolute;
+  top: 247px;
+  left: 325px;
+}
+
+.open_eye{
+  display: block;
+  position: absolute;
+  top: 247px;
+  left: 325px;
+}
+
 @media (min-width: 992px) and (max-width: 1290px) {
   .wrap_enter {
     margin: 40px auto 20px;
@@ -142,6 +171,16 @@
   .form__button,
   .form__password {
     font-size: 18px;
+  }
+
+  .form__button {
+    width: 150px;
+  }
+
+  .eye_pass {
+    position: absolute;
+    top: 244px;
+    left: 325px;
   }
 }
 
@@ -159,6 +198,16 @@
   .form__password {
     font-size: 16px;
   }
+
+  .form__button {
+    width: 135px;
+  }
+
+  .eye_pass {
+    position: absolute;
+    top: 240px;
+    left: 325px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .wrap_enter {
@@ -174,19 +223,25 @@
   .form__password {
     font-size: 16px;
   }
+
+  .eye_pass {
+    position: absolute;
+    top: 240px;
+    left: 325px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
   .wrap_enter {
     height: 415px;
     max-width: 320px;
-    margin: 25px auto 10px;
-    padding-top: 22px;
+    margin: 10px auto;
   }
 
   .form__title {
     font-size: 20px;
     line-height: 23px;
+    margin-top: 22px;
   }
 
   .form__paragraph {
@@ -197,7 +252,7 @@
 
   .form__label {
     font-size: 16px;
-    line-height: 140%;
+    line-height: 19px;
   }
 
   .form__checkbox {
@@ -213,20 +268,23 @@
 
   .form__button {
     font-size: 16px;
-    padding: 5px 15px 5px;
-    max-width: 130px;
+    /* padding: 5px 15px 5px; */
+    width: 130px;
     /* margin-bottom: 7px; */
+    line-height: 22px;
   }
 
   .form__password {
     font-size: 16px;
     margin-top: 15px;
+    line-height: 19px;
   }
 
   .form__input {
     font-size: 16px;
     padding: 10px 20px 10px;
-    margin-top: 5px;
+    line-height: 22px;
+    /* margin-top: 5px; */
   }
 
   .wrap_reg {
@@ -236,6 +294,12 @@
 
   .wrap_signup {
     margin: 29px auto;
+  }
+
+  .eye_pass {
+    position: absolute;
+    top: 222px;
+    left: 247px;
   }
 }
 
@@ -256,7 +320,7 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .wrap_reg {
-    max-width: 729px;
+    max-width: 727px;
     margin: 40px auto 25px;
     height: 572px;
   }
@@ -285,12 +349,24 @@
   .wrap_formEnter {
     margin-left: 84px;
   }
+
+  .form__button {
+    max-width: 133px;
+  }
 }
 @media (min-width: 320px) and (max-width: 575px) {
   .wrap_reg {
     max-width: 320px;
-    margin: 25px auto 10px;
-    height: 415px;
+    margin: 10px auto;
+    height: 395px;
+  }
+
+  .reg {
+    height: 100%;
+  }
+
+  .form__title-reg {
+    margin-top: 29px;
   }
 
   .wrap_signup {
@@ -301,6 +377,7 @@
   .wrap_formEnter {
     margin-left: 20px;
     width: 280px;
+    margin-top: -31px;
   }
 
 }

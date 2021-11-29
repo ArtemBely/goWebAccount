@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header1";
 
-
 class Registration extends React.Component {
   constructor() {
     super();
@@ -13,7 +12,7 @@ class Registration extends React.Component {
       msg = window.__INITIAL_DATA__;
     }
     this.state = {
-      msg
+      msg,
     };
   }
 
@@ -42,6 +41,7 @@ class Registration extends React.Component {
     }
   };
 
+
   render() {
     return (
       <>
@@ -50,7 +50,7 @@ class Registration extends React.Component {
           <p className="reg">
             {this.showSuccess()}
             <form action="/signup" method="POST" className="wrap_signup">
-              <h2 className="form__title">Registration</h2>
+              <h2 className="form__title form__title-reg">Registration</h2>
               <p className="form__paragraph">
                 Already Registered?
                 <NavLink to="/" className="form__link">
@@ -93,17 +93,13 @@ class Registration extends React.Component {
                   </label>
                 </div>
               </div>
-              <button
-                type="submit"
-                className="form__button"
-
-              >
-                Register now
+              <button type="submit" className="form__button">
+                Login now
               </button>
             </form>
           </p>
         </div>
-		<Footer />
+        <Footer />
       </>
     );
   }

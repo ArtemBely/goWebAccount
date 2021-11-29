@@ -78,6 +78,9 @@
   display: none;
 }
 
+
+
+
 @media (min-width: 992px) and (max-width: 1290px) {
   .cmp_navigation {
     width: 992px;
@@ -125,6 +128,9 @@
 
   .footer_social {
     height: 50px;
+    position: absolute;
+    align-items: center;
+    top: 170px;
   }
 
   .cps_footer_list {
@@ -213,6 +219,7 @@
   .cps_footer_list {
     margin-left: 293px;
     width: 332px;
+    margin-top: ;
   }
 
   .cps_footer_item {
@@ -248,6 +255,10 @@
     width: 726px;
     justify-content: space-between;
     margin-left: 20px;
+    position: absolute;
+    top: 150px;
+    align-items: center;
+    height: 27px;
   }
 }
 
@@ -331,11 +342,18 @@
   .footer_social {
     width: 533px;
     margin-left: 20px;
+    position: absolute;
+    top: 149px;
+    align-items: center;
   }
 
   /* .cps_footer_item {
     margin-left: 69px;
   } */
+
+  .cps_footer_list {
+    margin-top: 55px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
@@ -414,7 +432,7 @@
   }
 
   .cps_company_year {
-    margin-top: 25px;
+    margin-top: 27px;
     font-size: 16px;
     margin-bottom: 55px;
   }
