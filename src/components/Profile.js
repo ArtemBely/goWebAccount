@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../public/images/logo.svg";
 import { Link } from "react-router-dom";
 import burger from "../../public/images/burger.png";
+import closed from "../../public/images/close_menu.png";
 
 import "../../public/styles/style5.css";
 // import { Route, NavLink } from 'react-router-dom';
@@ -232,6 +233,17 @@ import "../../public/styles/style5.css";
 
 // export default Profile;
 function Profile() {
+  
+  function clickMenu () {
+    const menuBurger = document.querySelector('.burger_menu_lk');
+    menuBurger.className = 'burger_menu_open_lk';
+  }
+
+  function closeMenu () {
+    const menuBurger = document.querySelector('.burger_menu_open_lk');
+    menuBurger.className = 'burger_menu_lk';
+  }
+
   return (
     <>
       <header className="header_acc">
@@ -240,13 +252,24 @@ function Profile() {
             <img src={logo} alt="logo" className="header_logo" />
           </Link>
           <div className="header_nav">
-            <p className="header_nav_item">Cloud computing</p>
+            <p className="header_nav_item item_computing">Cloud computing</p>
             <p className="header_nav_item">i.ivanov</p>
             <p className="header_nav_item">BTC 0,05</p>
           </div>
-          <Link className="burger_menu_acc" to="/">
-            <img src={burger} alt="menu" className="menu_img" />
+          <Link className="burger_menu_link" to="#">
+          <img src={burger} alt="menu" className="menu_img" onClick={clickMenu} />
           </Link>
+          <div className="burger_menu_lk burger_menu_open_lk">
+            <div className="burger_menu_header">
+              <img src={logo} alt="logo" className="header_logo" />
+              <img src={closed} alt="logo" className="burger_menu_close" onClick={closeMenu} />
+            </div>
+            <div className="menu_burger_item">
+              <p className="header_nav_item">Cloud computing</p>
+              <p className="header_nav_item">i.ivanov</p>
+              <p className="header_nav_item">BTC 0,05</p>
+            </div>
+          </div>
         </div>
       </header>
       <div className="main_wrap_acc">
@@ -336,7 +359,9 @@ function Profile() {
           <p className="data_item"></p>
           <p className="data_item data_item_title item_price">Price</p>
           <p className="data_item item_price_tx"></p>
-          <p className="data_item data_item_title item_wasted">Wasted resources</p>
+          <p className="data_item data_item_title item_wasted">
+            Wasted resources
+          </p>
           <p className="data_item item_wasted_tx"></p>
           <p className="data_item data_item_title item_duration">Duration</p>
           <p className="data_item item_duration_tx"></p>
@@ -349,6 +374,6 @@ function Profile() {
         </div>
       </div>
     </>
-  );
+  )
 }
 export default Profile;
