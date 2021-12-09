@@ -1,0 +1,380 @@
+.wrap_cont {
+  position: relative;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  top: 13px;
+}
+.certain_time {
+  letter-spacing: 0.0357143em;
+  font-feature-settings: 'cpsp' on;
+  color: #A0A0A0;
+  mix-blend-mode: normal;
+}
+.item_start, .data_period {
+  letter-spacing: 0.0357143em;
+  color: #A0A0A0;
+  mix-blend-mode: normal;
+}
+.wrap_mob_1 {
+  display: none;
+}
+.wrap2_phone1 {
+  display: grid;
+  justify-content: center;
+}
+.grey_data {
+  letter-spacing: 0.0357em;
+  font-feature-settings: 'cpsp' on;
+  color: #A0A0A0;
+  position: relative;
+  top: -15px;
+}
+.grey_link {
+  color: #A0A0A0 !important;
+}
+.check_item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.wrap_settings {
+  margin: 0;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+
+.wrap_container-center-horizontal {
+    background-color: var(--seashell);
+}
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000de;
+  --grey: #a0a0a0;
+  --seashell: #f1f1f1;
+  --white: #ffffff;
+
+  --font-size-l2: 18px;
+  --font-size-xxxl: 24px;
+
+  --font-family-roboto: "Roboto", Helvetica;
+}
+.h2 {
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.roboto-normal-black-18px-22 {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-l2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-normal-star-dust-18px {
+  color: var(--grey);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-l2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-normal-black-18px-2 {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-l2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.settings {
+  align-items: center;
+  background-color: var(--seashell);
+  display: flex;
+  flex-direction: column;
+  height: 982px;
+  width: 100%;
+}
+
+.settings .component-2 {
+  align-items: center;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/61afb3b2eba543ba935a2340/releases/61afb47749c0c48d6cb435fd/img/rectangle@1x.svg);
+  background-size: 100% 100%;
+  display: flex;
+  height: 60px;
+  min-width: 1920px;
+  padding: 6.1px 274px;
+}
+
+.settings .group-16 {
+  align-self: flex-start;
+  height: 44px;
+  width: 117px;
+}
+
+.settings .cloud-computing {
+  letter-spacing: 0.15px;
+  line-height: 24px;
+  margin-left: 881px;
+  min-height: 24px;
+  min-width: 139px;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.settings .iivanov {
+  color: #808080;
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-l2);
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+  margin-left: 50px;
+  min-height: 24px;
+  min-width: 62px;
+  white-space: nowrap;
+}
+
+.settings .btc-005 {
+  height: 24px;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+  margin-left: 50px;
+  min-width: 73px;
+  white-space: nowrap;
+}
+
+.settings .flex-row {
+  align-items: flex-start;
+  display: flex;
+  height: 278px;
+  margin-right: 299.0px;
+  margin-top: 60px;
+  min-width: 1073px;
+}
+
+.settings .flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 278px;
+  width: 544px;
+}
+
+.settings .input {
+  color: var(--black);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.settings .component-10 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+  min-height: 71px;
+  width: 348px;
+}
+
+.settings .group-99 {
+  align-items: center;
+  display: flex;
+  min-width: 350px;
+}
+
+.settings .input-1 {
+  height: 22px;
+  letter-spacing: 0.64px;
+  width: 48px;
+}
+
+.settings .frame-99 {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  height: 28px;
+  margin-left: 54px;
+  min-width: 188px;
+  padding: 0 7px;
+}
+
+.settings .input-2 {
+  height: 22px;
+  letter-spacing: 0.64px;
+  min-width: 174px;
+  text-decoration: underline;
+}
+
+.settings .group-100 {
+  align-items: center;
+  display: flex;
+  margin-top: 15px;
+  min-width: 260px;
+}
+
+.settings .input-3 {
+  height: 22px;
+  letter-spacing: 0.64px;
+  min-width: 85px;
+}
+
+.settings .frame-99-1 {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  height: 28px;
+  margin-left: 17px;
+  min-width: 98px;
+  padding: 0 7px;
+}
+
+.settings .input-4 {
+  height: 22px;
+  letter-spacing: 0.64px;
+  min-width: 84px;
+  text-decoration: underline;
+}
+
+.settings .frame-704 {
+  align-items: center;
+  display: flex;
+  margin-top: 24px;
+  min-width: 219px;
+}
+
+.settings .shape {
+  height: 16px;
+  width: 16px;
+}
+
+.settings .input-5 {
+  height: 26px;
+  letter-spacing: 0.64px;
+  line-height: 25.2px;
+  margin-left: 10px;
+  min-width: 193px;
+  white-space: nowrap;
+}
+
+.settings .frame-703 {
+  align-items: center;
+  display: flex;
+  margin-top: 15px;
+  min-width: 544px;
+}
+
+.settings .input-6 {
+  height: 26px;
+  letter-spacing: 0.64px;
+  line-height: 25.2px;
+  margin-left: 10px;
+  min-width: 518px;
+  white-space: nowrap;
+}
+
+.settings .input-7 {
+  height: 26px;
+  letter-spacing: 0.64px;
+  line-height: 25.2px;
+  margin-top: 30px;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.settings .flex-col-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 187px;
+  min-height: 192px;
+  width: 342px;
+}
+
+.settings .group-78 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 111px;
+  width: 342px;
+}
+
+.settings .input-8 {
+  letter-spacing: 0.64px;
+  line-height: 25.2px;
+  margin-top: 36px;
+  min-height: 51px;
+  width: 338px;
+}
+
+.settings .frame-702 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 151.92px;
+  display: flex;
+  height: 42px;
+  margin-top: 39px;
+  min-width: 215px;
+  padding: 6.2px 21.0px;
+}
+
+.settings .group-59 {
+  height: 30px;
+  width: 30px;
+}
+
+.settings .input-9 {
+  align-self: center;
+  height: 22px;
+  letter-spacing: 0.64px;
+  margin-bottom: 0;
+  margin-left: 12px;
+  width: 130px;
+}

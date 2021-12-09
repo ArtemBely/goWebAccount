@@ -1,7 +1,7 @@
 import Enter from './Enter';
 import Registration from './Registration';
 import Profile from './Profile';
-import { getUsers } from './fetchData';
+import Settings from './Settings';
 
 const routes = [
   {
@@ -15,10 +15,14 @@ const routes = [
     component: Registration
   },
   {
-    path: ['/profile', '/profile/canceled'],
+    path: '/profile',
     exact: true,
-    component: Profile,
-    fetchInitialData: () => getUsers()
+    component: Profile
+  },
+  {
+    path: '/profile/settings',
+    exact: true,
+    component: Settings
   }
 ]
 

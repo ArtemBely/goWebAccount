@@ -19,7 +19,6 @@ import regRouter from './routes/registration';
 import signupRouter from './routes/signup';
 import profileRouter from './routes/profile';
 import enterRouter from './routes/enter';
-import apiRouter from './routes/api';
 
 const app = express();
 const CONNECTION_URI = process.env.MONGODB_URI;
@@ -70,7 +69,6 @@ app.use('/registration', regRouter);
 app.use('/signup', signupRouter);
 app.use('/profile', profileRouter);
 app.use('/enter', enterRouter);
-app.use('/api', apiRouter);
 
 app.get('/', notLoggedIn, (req, res, next) => {
   let cond = req.isAuthenticated();

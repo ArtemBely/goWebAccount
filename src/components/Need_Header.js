@@ -1,0 +1,88 @@
+import React from 'react';
+import { Link, NavLink } from "react-router-dom";
+import burger from "../../public/images/burger.png";
+import closed from "../../public/images/close_menu.png";
+import arrowDown from "../../public/images/arrow_down.png";
+import checkBox from "../../public/images/checkbox.png";
+import logo from "../../public/images/logo.svg";
+import close from '../../public/images/Frame 731.svg';
+
+class Need_Header extends React.Component{
+
+  constructor() {
+
+    super()
+
+    this.wrap_brg = React.createRef();
+    this.opa1 = React.createRef();
+  }
+
+   clickMenu = () => {
+      this.wrap_brg.current.classList.add('show_burger');
+      this.opa1.current.classList.add('opa');
+  }
+
+    closeFunc = () => {
+        this.wrap_brg.current.classList.remove('show_burger');
+        this.opa1.current.classList.remove('opa');
+    }
+
+  render() {
+
+    return (
+      <header className="header_acc">
+
+          <div className="container-center-horizontal2" ref={this.wrap_brg}>
+            <div className="menu screen">
+              <div className="flex-col">
+                <div className="group-131">
+                  <img className="group-16" src={logo} />
+                </div>
+                <div className="cloud-computing roboto-normal-star-dust-18px"><NavLink exact to='/profile' activeClassName='grey_link' style={{color: 'black'}}>Cloud computing</NavLink></div>
+                <div className="iivanov roboto-normal-black-18px-22"><NavLink exact to='/profile/settings' activeClassName='grey_link' style={{color: 'black'}}>i.ivanov</NavLink></div>
+                <div className="btc-005 valign-text-middle roboto-normal-black-18px-2">BTC 0,05</div>
+              </div>
+              <img className="frame-731" src={close} ref={this.close} onClick={this.closeFunc}/>
+            </div>
+          </div>
+
+        <div className="header_wrap">
+          <Link className="header_link" to="/">
+            <img src={logo} alt="logo" className="header_logo" />
+          </Link>
+          <div className="header_nav">
+            <NavLink to='/profile' exact='true' className="check_item header_nav_item item_computing" activeClassName='grey_link'>Cloud computing</NavLink>
+            <NavLink to='/profile/settings' className="check_item header_nav_item" activeClassName='grey_link'>i.ivanov</NavLink>
+            <p className="header_nav_item">BTC 0,05</p>
+          </div>
+          <Link className="burger_menu_link" to="#">
+            <img
+              src={burger}
+              alt="menu"
+              className="menu_img_acc"
+              onClick={this.clickMenu}
+              ref={this.opa1}
+            />
+          </Link>
+          <div className="burger_menu_lk burger_menu_open_lk">
+            <div className="burger_menu_header">
+              <img src={logo} alt="logo" className="header_logo" />
+              <img
+                src={closed}
+                alt="logo"
+                className="burger_menu_close"
+              />
+            </div>
+            <div className="menu_burger_item">
+              <p className="header_nav_item item_computing">Cloud computing</p>
+              <p className="header_nav_item">i.ivanov</p>
+              <p className="header_nav_item">BTC 0,05</p>
+            </div>
+          </div>
+        </div>
+      </header>
+    )
+  }
+}
+
+export default Need_Header;

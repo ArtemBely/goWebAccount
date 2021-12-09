@@ -2,20 +2,21 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .cmp_navigation {
   display: flex;
-  justify-content: space-between;
   width: 1291px;
-  height: 90px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .cmp_header_list {
   display: flex;
   list-style: none;
+  margin-left: 276px;
+  padding: 0;
+  margin-top: 50px;
 }
 
 .cmp_header_item{
@@ -36,6 +37,7 @@
 .cmp_header_logo {
   width: 155px;
   height: 57px;
+  margin-top: 29px;
 }
 
 .burger_menu{

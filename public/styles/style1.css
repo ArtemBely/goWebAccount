@@ -7,23 +7,45 @@
   justify-content: center;
   top: 300px;
 }  */
-
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../public/fonts/Roboto-Regular.eot');
+    src: url('../../public/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../public/fonts/Roboto-Regular.woff') format('woff'),
+    url('../../public/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../public/fonts/Roboto-Bold.eot');
+    src: url('../../public/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../public/fonts/Roboto-Bold.woff') format('woff'),
+    url('../../public/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 .wrap_reg {
   max-width: 667px;
+  height: 587px;
   margin: 75px auto 42px;
   background: #f9f9f9;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   border-radius: 20px;
+  align-items: center;
+
 }
 body {
+  font-family: 'Roboto-Regular';
   padding: 0;
   margin: 0;
 }
 .wrap_signup {
   display: grid;
-  width: 400px;
-  margin: 100px auto;
+  width: 367px;
+  /* margin: 100px auto; */
+  margin-left: 150px;
 }
 .reg_link {
   position: relative;

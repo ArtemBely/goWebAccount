@@ -1,0 +1,124 @@
+@media (min-width: 320px) and (max-width: 1433px) {
+  .main_wrap_acc {
+        height: 2000px;
+  }
+  .create_open, .create_open-2 {
+    width: 288px;
+    height: 1007px;
+  }
+  .create_open-2 {
+    left: 340px;
+    z-index: 999;
+    overflow: hidden;
+  }
+  .wrap_cont {
+    height: 1044px;
+  }
+  #back2 {
+    width: 65px;
+  }
+  #mini_back {
+    width: 65px;
+  }
+  .line, .line-2 {
+    width: 241px;
+    display: grid;
+  }
+  .line {
+    margin: 56px auto;
+  }
+  .line-2 {
+    margin: 50px auto;
+  }
+  .line_arrow {
+    left: 209px;
+    top: 36px;
+  }
+  .arr_tablet {
+    left: 209px;
+    top: 79px;
+    z-index: 1;
+  }
+  .content_btn {
+    width: 160px;
+  }
+  .btn_back_line, .btn_start {
+    width: 66px;
+  }
+  .line-info {
+    display: grid;
+  }
+  .line-input {
+    width: 235px;
+  }
+  .slider_range {
+    width: 221px;
+    margin-left: 14px;
+  }
+  .lear_r {
+    position: relative;
+    top: -36px !important;
+  }
+  .label_r {
+    left: -1px;
+    margin-top: 2px;
+  }
+  .line-text {
+    position: relative;
+    top: -15px;
+  }
+  .line_checkbox {
+    position: relative;
+    top: -33px;
+    left: 50px;
+  }
+  .check_mark {
+    left: 56px;
+    top: -12px;
+    z-index: 1000;
+  }
+  .test_split {
+    left: 0px;
+    margin-left: 0px;
+  }
+  .label_range {
+    left: -1px;
+    top: 20px;
+  }
+  .aud {
+    position: relative;
+    top: 42px;
+  }
+  .accMet {
+    top: 28px !important;
+  }
+  .NASNetLarge {
+    position: relative;
+    top: 45px;
+  }
+  .mod1 {
+    position: relative;
+    top: 31px
+  }
+  .line-info {
+    margin-top: 103px;
+  }
+}
+@media (min-width: 800px) and (max-width: 992px) {
+  .data_wrapper {
+    position: relative;
+    top: -763px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1070px) {
+  .data_wrapper {
+    position: relative;
+    top: -902px;
+  }
+}
+  @media (min-width: 1070px) and (max-width: 1433px) {
+    .data_wrapper {
+      position: relative;
+      top: -959px;
+    }
+  }
