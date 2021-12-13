@@ -19,6 +19,18 @@
   }
   #mini_back {
     width: 65px;
+    z-index: 1;
+    position: relative;
+  }
+  .cr_new {
+    margin-left: -206px;
+    margin-top: 62px;
+    z-index: 11;
+    position: relative;
+  }
+  .specHeight1 {
+    height: 332px !important;
+    z-index: 1;
   }
   .line, .line-2 {
     width: 241px;

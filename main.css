@@ -501,7 +501,46 @@ body {
 .header_acc {
   width: 100%;
 }
-
+.cont_fill, .cont_fill2 {
+  display: none;
+  align-items: center;
+  width: 207px;
+  height: 46px;
+  justify-content: center;
+  background: #FFAC22;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+.cr_new {
+  display: none;
+  align-items: flex-start;
+  width: 161px;
+  height: 46px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 29px;
+}
+.opa1 {
+  opacity: 1 !important;
+}
+.wrap_msg {
+  margin-left: 151px;
+  color: #FF5252;
+  position: relative;
+  top: -14px;
+}
+.wrap_msg2 {
+  position: relative;
+  top: -10px;
+  color: #FF5252;
+}
+.appearDisp {
+  display: flex !important;
+}
 .header_wrap {
   width: 1374px;
   margin: 0 auto;
@@ -969,7 +1008,9 @@ input[type="range"]::-webkit-slider-thumb {
   .header_wrap {
     width: 1000px;
   }
-
+  .wrap_msg {
+    margin-left: 117px;
+  }
   .header_logo {
     width: 109px;
     height: 40px;
@@ -1052,7 +1093,9 @@ input[type="range"]::-webkit-slider-thumb {
     width: 768px;
     margin: 0 auto;
   }
-
+  .wrap_msg {
+    margin-left: 181px !important;
+  }
   .header_logo {
     width: 109px;
     height: 40px;
@@ -1146,6 +1189,9 @@ input[type="range"]::-webkit-slider-thumb {
   .data_item_title {
     position: relative;
     top: 0px;
+  }
+  .wrap_msg {
+    margin-left: 85px;
   }
   .header_logo {
     width: 109px;
@@ -1262,6 +1308,15 @@ input[type="range"]::-webkit-slider-thumb {
     color: rgba(0, 0, 0, 0.87);
     mix-blend-mode: normal;
     width: 200px;
+  }
+  .wrap_msg {
+    margin-left: 20px;
+    top: 19px;
+    font-size: 14px;
+  }
+  .wrap_msg2 {
+    top: 16px;
+    font-size: 13px;
   }
   .main_wrap {
     margin: 0 auto;
@@ -2422,11 +2477,18 @@ body {
   min-width: 219px;
 }
 
-.settings .shape {
+.settings .shape, .shape2 {
   height: 16px;
   width: 16px;
 }
-
+.shape, .shape2 {
+  border: 2px solid #a0a0a0;
+  border-radius: 2px;
+}
+.checkSet {
+  border: none;
+  background: #ffac22;
+}
 .settings .input-5 {
   height: 26px;
   letter-spacing: 0.64px;
@@ -2904,6 +2966,18 @@ body {
   }
   #mini_back {
     width: 65px;
+    z-index: 1;
+    position: relative;
+  }
+  .cr_new {
+    margin-left: -206px;
+    margin-top: 62px;
+    z-index: 11;
+    position: relative;
+  }
+  .specHeight1 {
+    height: 332px !important;
+    z-index: 1;
   }
   .line, .line-2 {
     width: 241px;

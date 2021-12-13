@@ -42,7 +42,7 @@ class Enter extends React.Component {
 
   showMsg1 = () => {
     if (this.state.messages) {
-      return <p>{this.state.messages[0]}</p>;
+      return <p className='wrap_msg2'>{this.state.messages[0]}</p>;
     } else {
       console.log(this.state.messages);
     }
@@ -50,7 +50,7 @@ class Enter extends React.Component {
 
   showMsg2 = () => {
     if (this.state.messages2) {
-      return <p>{this.state.messages2[0]}</p>;
+      return <p className='wrap_msg2'>{this.state.messages2[0]}</p>;
     } else {
       console.log(this.state.messages2);
     }
@@ -62,7 +62,7 @@ class Enter extends React.Component {
 	const checkbox = document.querySelector('.form__checkbox');
 
 	console.log(e.target.value.length)
-	
+
     if (e.target.value.length > 0) {
       e.target.style.border = "2px solid black";
       eyeBlack.className = "open_eye";
@@ -80,13 +80,13 @@ class Enter extends React.Component {
       <>
         <Header />
         <div className="wrap_enter">
-          {this.showMsg1()}
-          {this.showMsg2()}
           <form
             action="/signup/signin"
             method="POST"
             className="wrap_formEnter"
           >
+          {this.showMsg1()}
+          {this.showMsg2()}
             <h2 className="form__title">Login to your account</h2>
             <p className="form__paragraph">
               Don't have an account?{" "}

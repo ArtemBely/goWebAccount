@@ -290,11 +290,18 @@
   min-width: 219px;
 }
 
-.settings .shape {
+.settings .shape, .shape2 {
   height: 16px;
   width: 16px;
 }
-
+.shape, .shape2 {
+  border: 2px solid #a0a0a0;
+  border-radius: 2px;
+}
+.checkSet {
+  border: none;
+  background: #ffac22;
+}
 .settings .input-5 {
   height: 26px;
   letter-spacing: 0.64px;

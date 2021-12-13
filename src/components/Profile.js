@@ -18,7 +18,72 @@ class Profile extends React.Component {
     super()
 
     this.create_open2 = React.createRef();
+    this.cont = React.createRef();
+    this.cont2 = React.createRef();
+    this.vova = React.createRef();
+    this.back22 = React.createRef();
+    this.hint = React.createRef();
+    this.hint_data = React.createRef();
+    this.hint_setting = React.createRef();
+    this.hint_setting_2 = React.createRef();
+    this.addData1 = React.createRef();
+    this.mini_back = React.createRef();
+    this.cr_new = React.createRef();
+    this.cr_new2 = React.createRef();
+    this.form1 = React.createRef();
+    this.form2 = React.createRef();
+    this.mining = React.createRef();
+    this.addData2 = React.createRef();
   }
+
+   addContinue = () => {
+     this.cont.current.classList.add('appearDisp');
+     this.cr_new.current.classList.add('appearDisp');
+     this.vova.current.classList.add('dispNone');
+     this.addData1.current.classList.add('dispNone');
+     this.mini_back.current.classList.add('dispNone');
+     this.hint_data.current.classList.add('orange_hint');
+     this.hint_setting.current.classList.add('orange_hint');
+     this.form1.current.classList.add('specHeight1');
+     if(window.screen.width > 320 && window.screen.width < 576) {
+       this.mining.current.classList.add('opa1');
+     }
+   }
+   addContinue2 = () => {
+     this.cont2.current.classList.add('appearDisp');
+     this.cr_new2.current.classList.add('appearDisp');
+     this.addData2.current.classList.add('dispNone');
+     this.back22.current.classList.add('dispNone');
+     this.hint_setting_2.current.classList.add('orange_hint');
+     this.form2.current.classList.add('specHeight1');
+     if(window.screen.width > 320 && window.screen.width < 576) {
+       this.mining.current.classList.add('opa1');
+     }
+   }
+   removeAll = () => {
+     this.cont.current.classList.remove('appearDisp');
+     this.cr_new.current.classList.remove('appearDisp');
+     this.vova.current.classList.remove('dispNone');
+     this.addData1.current.classList.remove('dispNone');
+     this.mini_back.current.classList.remove('dispNone');
+     this.hint_data.current.classList.remove('orange_hint');
+     this.hint_setting.current.classList.remove('orange_hint');
+     this.form1.current.classList.remove('specHeight1');
+     if(window.screen.width > 320 && window.screen.width < 576) {
+       this.mining.current.classList.remove('opa1');
+     }
+   }
+   removeAll2 = () => {
+     this.cont2.current.classList.remove('appearDisp');
+     this.cr_new2.current.classList.remove('appearDisp');
+     this.back22.current.classList.remove('dispNone');
+     this.addData2.current.classList.remove('dispNone');
+     this.hint_setting_2.current.classList.remove('orange_hint');
+     this.form2.current.classList.remove('specHeight1');
+     if(window.screen.width > 320 && window.screen.width < 576) {
+       this.mining.current.classList.remove('opa1');
+     }
+   }
 
    clickMenu = () => {
     const menuBurger = document.querySelector(".burger_menu_lk");
@@ -77,10 +142,12 @@ class Profile extends React.Component {
   }
 
    addDataclick2 = () => {
-    const createForm = document.querySelector(".content_item_create-2");
+    //const createForm2 = document.querySelector(".content_item_create-2");
     const hintItems = document.querySelector(".hint_items-2");
 
-    createForm.className = "create_open-2";
+    this.create_open2.current.classList.add('create_open-2');
+    this.create_open2.current.classList.remove('content_item_create-2');
+    //createForm2.className = "create_open-2";
     hintItems.classList.add("orange_hint");
     if(this.create_open2.current.classList.contains('dispNone')) {
       this.create_open2.current.classList.remove('dispNone');
@@ -93,10 +160,10 @@ class Profile extends React.Component {
      }
      const createForm = document.querySelector(".content_item_create-2");
     */
-    const createForm = document.querySelector(".create_open-2");
+    const createForm2 = document.querySelector(".create_open-2");
 
     if (document.contains(document.querySelector(".create_open-2"))) {
-      createForm.className = "content_item_create";
+      createForm2.className = "content_item_create-2";
     } else return;
   }
 
@@ -125,7 +192,7 @@ class Profile extends React.Component {
 
             <div className='wrap_cont'>
               <div className="acc_content">
-                <div className="content_item content-1">
+                <div className="content_item content-1" ref={this.form1}>
                   <h3 className="content_title">Computer vision</h3>
                   <p className="content_text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -133,8 +200,8 @@ class Profile extends React.Component {
                   </p>
                   <p className="content_hint">
                     <span className="hint_images">Images </span>
-                    <span className="hint_data">→ Data </span>
-                    <span className="hint_setting">→ Settings</span>→ Start
+                    <span className="hint_data" ref={this.hint_data}>→ Data </span>
+                    <span className="hint_setting" ref={this.hint_setting}>→ Settings</span>→ Start
                   </p>
                   <div className="content_btns">
                     <Link className="content_link" to="/">
@@ -145,22 +212,29 @@ class Profile extends React.Component {
                         Create new model
                       </p>
                     </Link>
-                    <Link className="content_link" to="/">
+                    <Link className="content_link" to="/profile">
                       <p
                         className="btn_images content_btn"
                         id="vova"
                         onClick={this.addImagesClick}
+                        ref={this.vova}
                       >
                         + Add images
                       </p>
+                      <p className='cont_fill' ref={this.cont}>
+                          Continue filling the model
+                      </p>
                     </Link>
-                    <Link className="content_link" to="/profile">
-                      <p className="btn_data content_btn" onClick={this.addDataClick}>
+                    <Link className="content_link" to="/profile" style={{zIndex: 10}}>
+                      <p className="btn_data content_btn" onClick={this.addDataClick} ref={this.addData1}>
                         + Add data
                       </p>
                     </Link>
                     <Link className="content_link" to="/profile">
-                      <p className="btn_back content_btn" id='mini_back'>Back</p>
+                      <p className="btn_back content_btn" id='mini_back' ref={this.mini_back}
+
+                       onClick={this.addContinue}>Back</p>
+                      <p className='cr_new' ref={this.cr_new} onClick={this.removeAll}>Create new model</p>
                     </Link>
                   </div>
                 </div>
@@ -172,7 +246,7 @@ class Profile extends React.Component {
                   </p>
 
                   <p className="content_hint hint_create">
-                    <span className="hint_items">Images → Data → Settings</span>→
+                    <span className="hint_items" ref={this.hint}>Images → Data → Settings</span>→
                     Start
                   </p>
                   <div className="line line_slider">
@@ -227,8 +301,9 @@ class Profile extends React.Component {
                   </div>
                   <div className="line_bottom">
                     <div className="line_btn">
-                      <Link className="content_link" to="/">
-                        <p className="btn_start content_btn">Start</p>
+                      <Link className="content_link" to="/profile">
+                        <p className="btn_start content_btn"
+                        onClick={this.backClick}>Start</p>
                       </Link>
                       <Link className="content_link" to="/profile">
                         <p
@@ -242,7 +317,7 @@ class Profile extends React.Component {
                   </div>
                 </div>
 
-                <div className="content_item content-2">
+                <div className="content_item content-2" ref={this.form2}>
                   <h3 className="content_title">Text processing</h3>
                   <p className="content_text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -250,7 +325,7 @@ class Profile extends React.Component {
                   </p>
                   <p className="content_hint">
                     <span className="hint_data-2">Data </span>
-                    <span className="hint_setting-2">→ Settings</span>→ Start
+                    <span className="hint_setting-2" ref={this.hint_setting_2}>→ Settings</span>→ Start
                   </p>
                   <div className="content_btns">
                     <Link className="content_link" to="/profile">
@@ -258,17 +333,22 @@ class Profile extends React.Component {
                         Create new model
                       </p>
                     </Link>
-                    <Link className="content_link" to="/profile">
+                    <Link className="content_link" to="/profile" style={{zIndex: 10}}>
                       <p
                         className="btn_data_text content_btn"
+                        ref={this.addData2}
                         onClick={this.addDataclick2}
                         style={{width: '130px'}}
                       >
                         + Add data
                       </p>
+                      <p className='cont_fill2' ref={this.cont2}>
+                          Continue filling the model
+                      </p>
                     </Link>
                     <Link className="content_link" to="/profile">
-                      <p className="btn_back_text content_btn" id='back2'>Back</p>
+                      <p className="btn_back_text content_btn" id='back2' onClick={this.addContinue2} ref={this.back22}>Back</p>
+                      <p className='cr_new' ref={this.cr_new2} onClick={this.removeAll2}>Create new model</p>
                     </Link>
                   </div>
                 </div>
@@ -334,8 +414,9 @@ class Profile extends React.Component {
                   </div>
                   <div className="line_bottom">
                     <div className="line_btn">
-                      <Link className="content_link" to="/">
-                        <p className="btn_start content_btn">Start</p>
+                      <Link className="content_link" to="/profile">
+                        <p className="btn_start content_btn"
+                        onClick={this.backClick2}>Start</p>
                       </Link>
                       <Link className="content_link" to="/profile">
                         <p
@@ -348,7 +429,7 @@ class Profile extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className="content_item item_mining">
+                <div className="content_item item_mining" ref={this.mining}>
                   <h3 className="content_title mining_title">Mining</h3>
                   <p className="content_text mining_text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

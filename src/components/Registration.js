@@ -12,7 +12,7 @@ class Registration extends React.Component {
       msg = window.__INITIAL_DATA__;
     }
     this.state = {
-      msg,
+      msg
     };
   }
 
@@ -34,7 +34,11 @@ class Registration extends React.Component {
       return (
         <p className="wrap_msg">
           {this.state.msg.map((msg) => (
-            <p className="txt_msg">{msg}</p>
+            <p className="txt_msg" style={{color:
+            msg == "Регистрация завершена успешно, можете войти" ?
+            'green' :
+            '#FF5252'
+           }}>{msg}</p>
           ))}
         </p>
       );

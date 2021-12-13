@@ -52,7 +52,7 @@ router.post('/', (req, res, done) => {
   var { email, password } = req.body;
 
   req.checkBody('email', 'Неправильный Email').isEmail();
-  req.checkBody('password', 'Минимально число символов - 5').isLength({min: 5});
+  req.checkBody('password', 'Минимально число символов в пароле - 5').isLength({min: 5});
 
   var errors = req.validationErrors();
 
