@@ -24,7 +24,7 @@
   display: none !important;
 }
 .au_header_link, .au_header_link:visited {
-	font-family: "Roboto_Regular";
+	font-family: "Roboto-Regular";
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
@@ -60,7 +60,7 @@
 .cps_footer_link {
   font-size: 22px;
   color: black;
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -71,7 +71,7 @@
 
 .cps_company_year {
   font-size: 22px;
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
 }
 
 .footer_icons {
