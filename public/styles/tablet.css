@@ -1,6 +1,6 @@
 @media (min-width: 320px) and (max-width: 1433px) {
   .main_wrap_acc {
-        height: 2000px;
+        height: 860px;
   }
   .create_open, .create_open-2 {
     width: 288px;
@@ -12,7 +12,7 @@
     overflow: hidden;
   }
   .wrap_cont {
-    height: 1044px;
+    height: 644px;
   }
   #back2 {
     width: 65px;
@@ -119,18 +119,18 @@
 @media (min-width: 800px) and (max-width: 992px) {
   .data_wrapper {
     position: relative;
-    top: -763px;
+    top: -351px;
   }
 }
 @media (min-width: 992px) and (max-width: 1070px) {
   .data_wrapper {
     position: relative;
-    top: -902px;
+    top: -340px;
   }
 }
   @media (min-width: 1070px) and (max-width: 1433px) {
     .data_wrapper {
       position: relative;
-      top: -959px;
+      top: -361px;
     }
   }

@@ -1,6 +1,6 @@
 [
-    { "id": 0, "title": "Edge computing hardware", "link": "/"},
-    { "id": 1, "title": "Computing power for AI", "link": "/"},
-    { "id": 2, "title": "G token", "link": "/"},
-    { "id": 2, "title": "About us ", "link": "/"}
+    { "id": 0, "title": "Edge computing hardware", "link": "https://goweb.com/html/Hardware%20Infrastructure.html"},
+    { "id": 1, "title": "Computing power for AI", "link": "https://goweb.com/html/Computing%20power%20solution%20for%20AI.html"},
+    { "id": 2, "title": "G token", "link": "https://goweb.com/html/g_token.html"},
+    { "id": 2, "title": "About us ", "link": "https://goweb.com/html/about%20us.html"}
 ]

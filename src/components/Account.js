@@ -7,8 +7,17 @@ class Account extends React.Component {
 
     super()
 
+    let user;
+    if(__isBrowser__) {
+      user = window.__INITIAL_STATE__;
+    }
+
     this.check1 = React.createRef();
     this.check2 = React.createRef();
+
+    this.state = {
+      user
+    }
   }
 
   changeColor = () => {
@@ -16,6 +25,14 @@ class Account extends React.Component {
   }
   changeColor2 = () => {
     this.check2.current.classList.toggle('checkSet');
+  }
+
+  getPost4 = () => {
+    if(this.state.user) {
+      return (
+        <div className="input-2 valign-text-bottom roboto-normal-black-18px-22">{this.state.user.email}</div>
+      )
+    }
   }
 
   render() {
@@ -32,7 +49,7 @@ class Account extends React.Component {
                          <div className="group-99">
                            <div className="input-1 valign-text-bottom roboto-normal-star-dust-18px">Email</div>
                            <div className="frame-99">
-                             <div className="input-2 valign-text-bottom roboto-normal-black-18px-22">i.ivanov@gmail.com</div>
+                             {this.getPost4()}
                            </div>
                          </div>
                          <div className="group-100">

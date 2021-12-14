@@ -259,7 +259,7 @@
   }
   .wrap2_phone1 {
     position: relative;
-    top: -750px;
+    top: -324px;
   }
   .data_wrap_phone-1 {
     grid-gap: 15px;
@@ -309,7 +309,7 @@
     }
     .settings .flex-col-1 {
       position: relative;
-      top: 145px;
+      top: 106px;
       width: 279px;
     }
     .settings .frame-703 {
@@ -330,11 +330,11 @@
       display: none;
     }
     #acc_bal {
-      top: 14px;
+      top: 20px;
       position: relative;
     }
     .settings .frame-702 {
-      margin-top: 34px;
+      margin-top: 25px;
     }
     .settings .flex-col {
       min-height: 278px;
@@ -368,4 +368,34 @@
     .line_arrow {
       left: 239px !important;
     }
+}
+@media (min-width: 320px) and (max-width: 800px) {
+    .au_header_list {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      background-color: #E5E5E5;
+      height: 100%;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start;
+      padding: 120px 10px 20px 20px;
+      display: block !important;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      overflow: auto;
+      z-index: 1000;
+  }
+  .au_header_list.active {
+      top: 0;
+  }
+  .au_header_item {
+    padding-bottom: 30px;
+  }
+    .au_header_link {
+      width: 109px;
+      height: 40.06px;
+  }
 }

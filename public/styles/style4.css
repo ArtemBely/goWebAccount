@@ -8,7 +8,35 @@
   left: 50%;
   position: relative;
 }
-
+#close2 {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+}
+.showMenu {
+  top: 0px !important;
+}
+.au_header_link {
+	width: 155.02px;
+	height: 56.98px;
+}
+.au_header_list {
+  display: none !important;
+}
+.au_header_link, .au_header_link:visited {
+	font-family: "Roboto_Regular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	-webkit-text-decoration-line: underline;
+	        text-decoration-line: underline;
+	color: #000000;
+}
+.enter_logo {
+  position: relative;
+  top: 3px;
+}
 .cps_footer {
   width: 1291px;
   height: 281px;
@@ -441,5 +469,11 @@
     margin: 0;
     width: 280px;
     margin-top: 28px;
+  }
+}
+@media (min-width: 1433px) {
+  .acc_paragraph {
+    position: relative;
+    top: 7px;
   }
 }

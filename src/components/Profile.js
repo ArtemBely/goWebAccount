@@ -34,6 +34,7 @@ class Profile extends React.Component {
     this.form2 = React.createRef();
     this.mining = React.createRef();
     this.addData2 = React.createRef();
+    this.main_wrap = React.createRef();
   }
 
    addContinue = () => {
@@ -48,6 +49,9 @@ class Profile extends React.Component {
      if(window.screen.width > 320 && window.screen.width < 576) {
        this.mining.current.classList.add('opa1');
      }
+     if(window.screen.width > 1070 && window.screen.width < 1433) {
+       this.main_wrap.current.classList.add('extraHeight');
+     }
    }
    addContinue2 = () => {
      this.cont2.current.classList.add('appearDisp');
@@ -58,6 +62,9 @@ class Profile extends React.Component {
      this.form2.current.classList.add('specHeight1');
      if(window.screen.width > 320 && window.screen.width < 576) {
        this.mining.current.classList.add('opa1');
+     }
+     if(window.screen.width > 1070 && window.screen.width < 1433) {
+       this.main_wrap.current.classList.add('extraHeight');
      }
    }
    removeAll = () => {
@@ -72,6 +79,9 @@ class Profile extends React.Component {
      if(window.screen.width > 320 && window.screen.width < 576) {
        this.mining.current.classList.remove('opa1');
      }
+     if(window.screen.width > 1070 && window.screen.width < 1433) {
+       this.main_wrap.current.classList.remove('extraHeight');
+     }
    }
    removeAll2 = () => {
      this.cont2.current.classList.remove('appearDisp');
@@ -82,6 +92,9 @@ class Profile extends React.Component {
      this.form2.current.classList.remove('specHeight1');
      if(window.screen.width > 320 && window.screen.width < 576) {
        this.mining.current.classList.remove('opa1');
+     }
+     if(window.screen.width > 1070 && window.screen.width < 1433) {
+       this.main_wrap.current.classList.remove('extraHeight');
      }
    }
 
@@ -180,7 +193,7 @@ class Profile extends React.Component {
       <>
       <Need_Header />
         <div className="acc_content_wrap">
-          <div className="main_wrap_acc">
+          <div className="main_wrap_acc" ref={this.main_wrap}>
             <div className="acc_wrap">
               <div className="acc_text">
                 <h3 className="acc_heading item_computing">Cloud computing</h3>
@@ -475,7 +488,7 @@ class Profile extends React.Component {
               <p className="data_item data_item_title">Price</p>
               <p className="data_item data_item_title">Wasted resources</p>
               <p className="data_item data_item_title">Status</p>
-              <p className="data_item item_start">Resnet50</p>
+              <p className="data_item item_start" style={{color: 'black'}}>Resnet50</p>
               <p className="data_item">USD 15</p>
               <p className="data_item">312 321</p>
               <p className="data_item process">In process</p>

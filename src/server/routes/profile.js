@@ -15,7 +15,7 @@ require('dotenv/config');
 
 router.get('/', isLoggedIn, async (req, res, next) => {
 
-    let cond = req.isAuthenticated();
+    let user = req.user;
     const congrats = renderToString(
       <StaticRouter>
          <Profile />
@@ -29,7 +29,7 @@ router.get('/', isLoggedIn, async (req, res, next) => {
                      <link rel="stylesheet" type="text/css" href="../main.css">
                        <meta name="viewport" content="width=device-width, initial-scale=1">
                          <script src='/bundle.js' defer></script>
-                         <script>window.__INITIAL_STATE__ = ${serialize(cond)}</script>
+                         <script>window.__INITIAL_STATE__ = ${serialize(user)}</script>
                          </head>
                        <body>
                      <div id="app">
@@ -41,7 +41,7 @@ router.get('/', isLoggedIn, async (req, res, next) => {
 });
 
 router.get('/settings', isLoggedIn, (req, res) => {
-  let cond = req.isAuthenticated();
+  let user = req.user;
   const set = renderToString(
     <StaticRouter>
        <Settings />
@@ -55,7 +55,7 @@ router.get('/settings', isLoggedIn, (req, res) => {
                    <link rel="stylesheet" type="text/css" href="../main.css">
                      <meta name="viewport" content="width=device-width, initial-scale=1">
                        <script src='/bundle.js' defer></script>
-                       <script>window.__INITIAL_STATE__ = ${serialize(cond)}</script>
+                       <script>window.__INITIAL_STATE__ = ${serialize(user)}</script>
                        </head>
                      <body>
                    <div id="app">
